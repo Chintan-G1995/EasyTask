@@ -1,12 +1,66 @@
-# React + Vite
+Todo List with Pagination, Filtering, and Search
+This is a React-based Todo List application featuring:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add, toggle (complete/incomplete), and delete todos
 
-Currently, two official plugins are available:
+Filter by All, Active, or Completed status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Search todos by label
 
-## Expanding the ESLint configuration
+Pagination support (10 items per page)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Latest added todos appear first (Last In, First Serve)
+
+Features
+✨ Add Todos — Add new tasks to your todo list.
+
+✅ Toggle Todos — Mark tasks as complete or active.
+
+🗑️ Delete Todos — Remove unwanted tasks from the list.
+
+🔍 Search — Instantly filter todos by typing keywords.
+
+🎯 Status Filters — View All, Active, or Completed tasks.
+
+📄 Pagination — Navigate through your todos, 10 per page.
+
+🚀 Sorted Latest First — Newly added todos appear at the top of page 1.
+
+Tech Stack
+React (Functional Components + Hooks)
+
+Context API for state management (useTodos)
+
+SCSS for component styling
+
+Custom Components like Checkbox
+
+How to Run Locally
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Start the development server
+
+bash
+Copy
+Edit
+npm run dev
+Open http://localhost:5173 (or whichever port is shown) to view it in the browser.
+
+Important Notes
+Pagination is dynamic — if you delete a todo and there are fewer todos on the last page, the page adjusts automatically.
+
+Search and filter operations reset the pagination to show results accordingly.
+
+Latest Tasks First — Todos are sorted in descending order based on their id, with the newest shown first.
+
