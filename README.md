@@ -38,22 +38,13 @@ Custom Components like Checkbox
 How to Run Locally
 Clone the repository
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Chintan-G1995/EasyTask.git
+cd EasyTask
+
 Install dependencies
-
-bash
-Copy
-Edit
 npm install
-Start the development server
 
-bash
-Copy
-Edit
+Start the development server
 npm run dev
 Open http://localhost:5173 (or whichever port is shown) to view it in the browser.
 
